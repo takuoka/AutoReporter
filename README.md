@@ -15,7 +15,7 @@
 
 ### 1. LINE通知の設定
 
-1. [LINE Official Account Manager](https://account.line.biz/)で公式アカウントを作成
+1. [LINE Official Account Manager](https://manager.line.biz/)で公式アカウントを作成
 2. Messaging APIを有効化してチャネルアクセストークンを発行
 3. 表示されるQRコードから友だち追加
 
