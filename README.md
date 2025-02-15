@@ -11,6 +11,24 @@
   - 当月の予測料金
 - GitHub Actionsによる定期実行
 
+## セットアップ手順
+
+### 1. LINE通知の設定
+
+1. [LINE Official Account Manager](https://account.line.biz/)で公式アカウントを作成
+2. Messaging APIを有効化してチャネルアクセストークンを発行
+3. 表示されるQRコードから友だち追加
+
+### 2. リポジトリのセットアップ
+
+1. このリポジトリをフォークする
+
+2. GitHub Secretsの設定:
+   - リポジトリの Settings → Secrets and variables → Actions で以下を設定
+     - `LINE_CHANNEL_TOKEN`: 上記で発行したチャネルアクセストークン
+     - `TEPCO_USERNAME`: TEPCOのログインユーザー名
+     - `TEPCO_PASSWORD`: TEPCOのログインパスワード
+
 ## 必要な環境変数
 
 以下の環境変数をGitHub Secretsに設定してください：
@@ -23,16 +41,6 @@ LINE_CHANNEL_TOKEN=your_line_channel_token    # LINEのチャンネルアクセ�
 TEPCO_USERNAME=your_tepco_username           # TEPCOのログインユーザー名
 TEPCO_PASSWORD=your_tepco_password           # TEPCOのログインパスワード
 ```
-
-## セットアップ
-
-1. このリポジトリをフォークする
-
-2. GitHub Secretsの設定:
-   - リポジトリの Settings → Secrets and variables → Actions で以下を設定
-     - `LINE_CHANNEL_TOKEN`
-     - `TEPCO_USERNAME`
-     - `TEPCO_PASSWORD`
 
 ## 動作タイミング
 
