@@ -2,7 +2,7 @@ name: 電気料金通知
 
 on:
   schedule:
-    - cron: '0 20 * * *'  # 毎日午後8時に実行
+    - cron: '0 11 * * *'  # 毎日20:00 JST (11:00 UTC)
   workflow_dispatch:      # 手動実行用
 
 jobs:
