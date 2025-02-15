@@ -2,6 +2,13 @@
 
 東京電力の電気料金を自動で取得し、LINEに通知するスクリプトです。
 
+## 概要
+
+GitHub Actionsで Ubuntu 環境を起動し、Puppeteer（ヘッドレスChrome）でTEPCOのWebサイトにアクセス。
+ログインして料金情報を取得し、LINE Messaging APIで通知を行います。
+
+Node.jsとPuppeteerを使用した自動化により、毎日の電気料金チェックを効率化します。
+
 ## 機能
 
 - TEPCOウェブサイトへの自動ログイン
